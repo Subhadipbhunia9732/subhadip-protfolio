@@ -1,0 +1,394 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    ;border: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-color: #080808;
+   /* background-size: cover;
+    background-position: center;*/
+
+}
+
+.conatiner{
+    padding: 10px 10px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 100px;
+    height: 90px;
+    margin: auto 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    font-weight: bolder;
+}
+
+nav ul li a i{
+    color: #ff004f;
+    margin-right: 10px;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+span{
+    color: #ff004f;
+}
+
+.header-text h1{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.header-text p{
+    font-size: 30px;
+}
+
+.header-text{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right-header img{
+    width: 410px;
+    height: 410px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 50px 1px red;
+}
+
+.right-header i{
+    font-size: 20rem;
+    color: #eaff00;
+}
+
+/*---------------------------About------------------------*/
+
+#about{
+    padding: 100px 60px 100px 60px;
+}
+
+.balta1 img{
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.balta{
+    display: flex;
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.bokachoda h1{
+    margin-left: 50px;
+    border-bottom: 2px solid #ff004f;
+}
+
+.bokachoda p{
+    margin-left: 50px;   
+}
+
+.bokachoda1{
+    display: flex;
+    margin-top: 20px;
+}
+
+.bokachoda1 p{
+    text-decoration: #ff004f underline 2px;
+}
+
+.bokachoda1 ul{
+    margin-top: 50px;
+}
+
+.bokachoda1 ul li{
+    font-size: 0.9rem;
+}
+
+.bokachoda1 ul li span{
+    font-size: 0.8rem;
+}
+
+hr{
+    height: 30px;
+    width: 90%;
+    border-radius: 10px;
+    background: linear-gradient(45deg ,blue,yellow,rgb(255, 140, 0),rgb(255, 0, 157));
+    margin: 0 auto;
+    animation: anima 1s linear infinite;
+}
+
+@keyframes anima {
+    to{
+        background: linear-gradient(90deg ,rgb(128, 255, 0),rgb(255, 0, 64),rgb(0, 255, 145),rgb(0, 170, 255));
+    }
+}
+
+/*---------------------------------Services-------------------------------*/
+
+#services{
+    height: 100vh;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#services h1{
+    width: 90%;
+    font-size: 2rem;
+    margin: 60px 0 40px 60px;
+    border-bottom: 2px solid #ff004f;
+}
+
+.bal{
+   /* margin: 80px 0 0 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box{
+    width: 25%;
+    height: 350px;
+    background: rgb(28, 31, 31);
+    border-radius: 50px 50px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s , transform 0.5s;
+}
+
+.box:hover{
+    background: linear-gradient(rgb(28, 31, 31),#ff004f);
+    transform: translateY(-10px);
+}
+
+.bal1 h2{
+    margin: 0px 20px 0px 20px;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #fff;
+}
+
+.bal1 p{
+    margin: 10px 20px 10px 20px;
+}
+
+.box .bal1 a{
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+}
+
+/*-----------------------------------portfolio-----------------------------------*/
+
+#portfolio{
+    height: 100vh;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#portfolio h1{
+    width: 90.5%;
+    font-size: 2rem;
+    margin: 0px 60px 20px 60px;
+    padding-top: 40px;
+    border-bottom: 2px solid #ff004f;
+}
+
+.pel{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.photo{
+    height: 350px;
+    width: 25%;
+    border-radius: 20px 80px;
+    transition: transform 0.5s;
+}
+
+.photo:hover{
+    transform: translate(20px, -10px);
+}
+
+.o{
+    background-image: url(image/1.png);
+    background-size: cover;
+}
+
+.oo{
+    background-image: url(image/3.png);
+    background-size: cover;
+}
+
+.ooo{
+    background-image: url(image/4.png);
+    background-size: cover;
+}
+
+.see{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;   
+    justify-content: center;  
+}
+
+.see-more {
+    padding: 10px 50px ;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #ff004f;
+    transition: background 0.3s;
+}
+
+.see-more:hover{
+    background-color: #ff004f;
+}
+
+/*------------------------------------------contact--------------------------------------------*/
+
+#contact{
+    height: 70vh;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-left{
+    width: 20%;
+    padding: 0 50px 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-left p{
+    margin: 15px 0;
+}
+
+.contact-left h1{
+    width: 90%;
+    padding: 0 0 0 5px;
+    border-bottom: 3px solid #ff004f;
+}
+
+.contact-right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right input{
+    color: #fff;
+    height: 30px;
+    outline: none;
+    margin: 10px 0 0 0;
+    background: #262626;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-right textarea{
+    color: #fff;
+    margin-top: 20px;
+    background: #262626;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.btn{
+    width: 150px;
+    padding: 10px 0;
+    margin: 70px 0 0 0;
+    color: #fff;
+    background-color: #ff004f;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn i{
+    margin-left: 10px;
+}
+
+.btn2{
+    width: 150px;
+    cursor: pointer;
+}
+
+.icon a i{
+    font-size: 2rem;
+    margin-right: 15px;
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.842);
+    transition: transform 0.3s;
+}
+
+.icon a i:hover{
+    transform: scale(1.4);
+}
+
+.contact-left p i{
+    padding-left: 20px;
+    color: rgb(109, 73, 194);
+}
